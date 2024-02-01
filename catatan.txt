@@ -1,0 +1,41 @@
+select * from (nama tabel)
+
+SQL adalah singkatan dari Structured Query Language
+sql dapat CRUD data
+perintah utama (seperti SELECT, UPDATE, DELETE, INSERT, WHERE) 
+
+RDBMS adalah singkatan dari Sistem Manajemen Basis Data Relasional.
+RDBMS adalah dasar untuk SQL, dan untuk semua sistem database modern seperti MS SQL Server, IBM DB2, Oracle, MySQL, dan Microsoft Access.
+
+Data dalam RDBMS disimpan dalam objek database yang disebut tabel. Tabel adalah kumpulan entri data terkait dan terdiri dari kolom dan baris.
+
+setiap tabel memiliki pecahan field contoh seperti id, name costumer
+kolom adalah entitas vertikal dalam tabel, baris adalah entitas horizontal dalam tabel
+
+select * from => artinya pilih dari tabel mana?
+
+Kata kunci SQL TIDAK peka huruf besar-kecil: selectsama dengan SELECT
+
+select ( field,field ) from (nama tabel);
+SELECT DISTINCT => digunakan untuk mengembalikan hanya nilai yang berbeda (berbeda).
+
+WHERE => digunakan untuk memfilter catatan.
+select * from Custumers
+where Country='Mexico;
+kita juga dapat memakai operator dalam where
+select * from Custumers
+where CustomerID > 80;
+
+ORDER BY => digunakan untuk mengurutkan kumpulan hasil dalam urutan menaik atau menurun. jika data integer akan mengurut dari yang terkecil, jika string akan terurut dari abjad
+SELECT * FROM Products
+ORDER BY Price;
+desc => tambahkan desc untuk mengurut dari yang terbesar untk data integer, jika string akan terbalik berdasarkan abjad
+kita bisa memanggil beberapa field, 
+ASC lawan dari DESC tapi hampir sama hanya beda pengurutan diurut menarik dan menurun
+
+AND => digunakan untuk memfilter rekaman berdasarkan lebih dari satu kondisi, seperti jika Anda ingin mengembalikan semua pelanggan dari Spanyol yang dimulai dengan huruf 'G':
+OR => 
+
+Operator ANDmenampilkan catatan jika semua kondisinya BENAR.
+
+Operator ORmenampilkan catatan jika salah satu kondisinya BENAR.
